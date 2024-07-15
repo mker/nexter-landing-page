@@ -1,7 +1,7 @@
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
+  gap: 6rem;
   grid-column: center-start / center-end;
   align-items: start;
 
