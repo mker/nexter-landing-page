@@ -4,8 +4,11 @@
   gap: 6rem;
   grid-column: center-start / center-end;
   align-items: start;
-
   margin: 15rem 0;
+
+  @media screen and (max-width: $bp-small) {
+    margin: 8rem 0;
+  }
 }
 
 .feature {

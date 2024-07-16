@@ -11,7 +11,17 @@
   align-items: center;
   list-style: none;
 
-  &__item {
+  @media screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  @media screen and (max-width: $bp-small) {
+    padding: 0;
+    grid-template-columns: minmax(8rem, 1fr);
   }
 
   &__link:link,
@@ -24,8 +34,15 @@
     padding: 1.5rem;
     display: block;
     color: #fff;
-
     transition: all 0.3s;
+
+    @media screen and (max-width: $bp-large) {
+      padding: 1.2rem;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      padding: 1rem;
+    }
   }
 
   &__link:hover,
@@ -41,4 +58,8 @@
   margin: 6rem auto 0 auto;
   text-align: center;
   width: 70%;
+
+  @media screen and (max-width: $bp-small) {
+    width: 100%;
+  }
 }
