@@ -12,7 +12,8 @@
       rgba($color-secondary, 0.93),
       rgba($color-secondary, 0.93)
     ),
-    url(../img/hero.jpeg);
+    image-set(url("../img/hero-min.jpeg") 1x, url("../img/hero.jpeg") 2x);
+
   background-size: cover;
   background-position: center;
 
